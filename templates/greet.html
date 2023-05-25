@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <title>Booking</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    footer {
+      background-color: #000;
+   } 
+    </style>
+</head>
+
+<form action="/greet",method='post'>
+    <body align="center">
+        
+<table class="table-class" border="5" align="center" cellspacing="3" cellpadding="10">
+    <p><strong><font face="cursive">Your Ticket was Booked.</font></p>
+    <tr><td colspan="2"><font size="5"><b>BUS TICKET</font></td></tr>
+      <tr><td colspan="2"><img src="/static/logo2.jpg" width="150" height="150"></td></tr>
+      <tr><td><b>Name : {{Name}}</b></td><td><b>Phone number : {{Mobile}}</b></td></tr>
+      <tr><td><b>From : {{From}}</b></td><td><b>To : {{To}}</b></td></tr>
+       
+       <tr><td><b> Time : {{Time}}</b></td><td> <b>Date : {{Date}}</b></td></tr>
+
+       <tr><td><b>Tickets : {{Tickets}}</b></td>
+        
+        {% if difprices%}
+        <td><b>Price : {{difprices}}</b></td>
+        {% endif%}
+        </tr>
+        <tr>
+        {% if dtime %}
+        <td><center><b>Departure Time: {{dtime}}</b></center></td>
+      
+        {% endif %}
+      
+      </tr>
+      </table> 
+       <br>
+       
+        <font face="cursive" size="5">
+        <p>Thank you for booking.<br>Have a nice Journey.</font></p>
+    </form>
+    </body>
+    <footer><font color="white" align="center">
+      <table>
+       <tr><td><div class="block">
+          <div class="row">
+            <div class="col-md-3">
+              <h4>About Us</h4>
+              <p>This is an online bus ticket booking platform <br>that makes it easy to find and book<br> bus tickets for your travel needs.</p>
+            </td></div>
+            <td><div class="block">
+              <h4>Contact Us</h4>
+              
+                <p>Email: BookMyBus@gmail.com</p>
+                <p>Phone: 1-800-555-1234</p>
+                <p>Address: Masjid Center,Kakinada</p>
+              
+           </td></div>
+           <td><div class="block">
+              <h4>Our Agenda</h4>
+              <p>To make everyone's should be secure and safe.<br>
+              This is our first startup company.<br>
+              We will give best travelling experience.
+            </td> </div>
+           <td><div class="block">
+              <h4>Subscribe</h4>
+              <p>Sign up for our newsletter to stay up-to-date <br>on the latest bus ticket deals and promotions.</p>
+              
+            </td></tr></div>
+          </div></table>
+          <hr>
+          <p class="text-center">© 2023 Bus Booking. All rights reserved.</p>
+          <hr>
+        </div>
+      </font>
+      </footer>
+      
+</html>

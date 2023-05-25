@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/design.css">
+    <title>Travel Booking</title>
+    <style>
+       
+        input::-webkit-calendar-picker-indicator {
+          filter: invert(1);
+        }
+      </style>  
+</head>
+
+<body class="main_bg" align="center">
+    
+    <div class="form">
+        <div class="form-text">
+            <img src="/static/logo2.jpg" alt="" height="250" weight="250" > 
+            <h1>Book Now</h1>
+        </div>
+        <div class="main-form">
+            <form action="/greet" method="POST">
+                <div>
+                    <label for="Name" style="color: white;"><font size="5" face="cursive">Name:</font></label>
+                    <input type="text" name="Name" id="Name" placeholder="Write your name here..." required>
+                </div>
+                
+                <div>
+                    <label for="From" style="color: white;"><font size="5" face="cursive">From:</font></label>
+                    <select name ="From"  id="From" required >
+                        <option value=" "><--city--></option>
+                        <option value="1">Hyderabad</option>
+                        <option value="2"> Tirupati</option>
+                        <option value="3">Chennai</option>
+                        <option value="4">Banglore</option>
+                        <option value="5">Vijayawada</option>
+                       
+                        
+                        <option value="6">Vishakapatnam</option>
+                       
+                       
+                        
+                        </select>
+                </div>
+                <div>
+                    <label for="To" style="color: white;"><font size="5" face="cursive">To:</font></label>
+        
+                    <select name ="To"  id="To" required >
+                        <option value=" "><--city--></option>
+                        <option value="1">Hyderabad</option>
+                        <option value="2"> Tirupati</option>
+                        <option value="3">Chennai</option>
+                        <option value="4">Banglore</option>
+                        <option value="5">Vijayawada</option>
+                       
+                        
+                        <option value="7">Vishakapatnam</option>
+                       
+                       
+                        </select>
+                </div>
+                <div>
+                    
+                    <label for="Tickets" style="color: white;"><font size="5" face="cursive">Tickets:</font></label>
+                    <input type="number" name="Tickets" id="Tickets" Placeholder="Number ofTickets...." required>
+                       
+                </div>
+                
+                <div>
+                    <label for="Time" style="color: white;"> <font size="5" face="cursive">Time:</font></label>
+                    <input type="time" name="Time" id="Time" placeholder="Time" required>
+                </div>
+                <div>
+                    <label for="Date" style="color: white;"><font size="5" face="cursive">Date:</font></label>
+                    <input type="date" name="Date" id="Date" placeholder="date" required>
+                </div>
+                <div>
+                    <label for="Mobile" style="color: white;"><font size="5" face="cursive">Mobile:</font></label>
+                    <input type="number" name="Mobile" id="Mobile" placeholder="Write your number here..." required>
+                </div>
+                
+                <div >
+                    <button type="submit" class="submit-button">Submit</button>
+
+                </div>
+                
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>
